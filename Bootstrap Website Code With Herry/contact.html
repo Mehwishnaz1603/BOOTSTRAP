@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MCoder - Contact Us</title>
+
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .contact-container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-weight: 500;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    label {
+      font-weight: 500;
+      color: #333;
+    }
+
+    .form-control:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      padding: 8px 25px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+      background-color: black;
+    }
+
+    footer {
+      padding: 25px 0;
+      background-color: #343a40;
+      color: #f8f9fa;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffc107;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons a {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .social-icons a:hover i.fab {
+      color: #ffc107;
+      transform: scale(1.2);
+    }
+
+  </style>
+</head>
+
+<body>
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MCoder</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link mx-3" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="/about.html">About</a></li>
+        <li class="nav-item dropdown mx-3">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Topics</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Technology</a>
+            <a class="dropdown-item" href="#">Web Development</a>
+            <a class="dropdown-item" href="#">UI/UX</a>
+            <a class="dropdown-item" href="#">Tech</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Support</a>
+            <a class="dropdown-item" href="#">Write for us</a>
+          </div>
+        </li>
+        <li class="nav-item active"><a class="nav-link" href="/contact.html">Contact Us</a></li>
+      </ul>
+        </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-3" type="search" placeholder="Search">
+        <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Contact Form -->
+  <div class="container my-4">
+    <div class="contact-container mx-auto col-md-10 col-lg-8">
+      <h2 class="text-center">Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="email">Email address <span class="text-danger">*</span></label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="queryType">Select your Query <span class="text-danger">*</span></label>
+          <select class="form-control" id="queryType" required>
+            <option disabled selected>-- Select --</option>
+            <option>Web</option>
+            <option>Tech Stack</option>
+            <option>Technology</option>
+            <option>Agentic AI</option>
+            <option>UI/UX Designing</option>
+            <option>Software Designing</option>
+            <option>Others</option>
+          </select>
+        </div>
+
+        <label>Who are you?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="member">
+          <label class="form-check-label" for="member">Member</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="professor">
+          <label class="form-check-label" for="professor">Professor</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="coder">
+          <label class="form-check-label" for="coder">Coder</label>
+        </div>
+
+        <div class="form-group">
+          <label for="about">Tell us about yourself</label>
+          <textarea class="form-control" id="about" rows="2" placeholder="Introduce yourself briefly" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="concern">Elaborate Your Concern</label>
+          <textarea class="form-control" id="concern" rows="3" placeholder="Describe your query in detail" required></textarea>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-4">
+    <div class="container text-center">
+      <div class="mb-3 social-icons">
+        <a href="https://twitter.com/" class="text-light mx-2" target="_blank" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://facebook.com/" class="text-light mx-2" target="_blank" title="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://tiktok.com/" class="text-light mx-2" target="_blank" title="TikTok"><i class="fab fa-tiktok fa-lg"></i></a>
+        <a href="https://youtube.com/" class="text-light mx-2" target="_blank" title="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+        <a href="https://github.com/" class="text-light mx-2" target="_blank" title="GitHub"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://linkedin.com/" class="text-light mx-2" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://instagram.com/" class="text-light mx-2" target="_blank" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
+      <p class="mb-1"><a href="#" class="text-warning">Back to top</a></p>
+      <p class="mb-0">© 2025-2026 MCoder, Inc. · <a href="#" class="text-warning">Privacy</a> · <a href="#" class="text-warning">Terms</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("✅ Thank you! Your message has been submitted successfully.");
+      this.reset();
+    });
+
+    document.getElementById('darkToggle').addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+      this.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+    });
+  </script>
+</body>
+
+</html>
